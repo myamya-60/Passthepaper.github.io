@@ -1,4 +1,4 @@
-![Alt text](https://github.com/myamya-60/Passthepaper.github.io/issues/1#issue-1696251053.jpg)
+[![Ait text](파일경로 "title")](https://github.com/myamya-60/Passthepaper.github.io/issues/1#issue-1696251053)
 
 # Pass_the_paper
 
