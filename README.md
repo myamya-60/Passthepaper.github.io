@@ -1,4 +1,4 @@
-![Alt text](/path/to/https://github.com/myamya-60/Passthepaper.github.io/issues/1#issue-1696251053.jpg)
+![Alt text](https://github.com/myamya-60/Passthepaper.github.io/issues/1#issue-1696251053.jpg)
 
 # Pass_the_paper
 
