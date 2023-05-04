@@ -1,3 +1,5 @@
+![Alt text](/path/to/https://github.com/myamya-60/Passthepaper.github.io/issues/1#issue-1696251053.jpg "Optional title")
+
 # Pass_the_paper
 
 이 장소에 모든 과정을 기록하고 정리 할 예정 입니다.
