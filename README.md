@@ -1,5 +1,5 @@
 # Pass_the_paper
-----------------
+================
 ![1 긴자 외관](https://user-images.githubusercontent.com/132584735/236255992-79ce179e-d6fe-483f-9aac-c5936b8d14f0.jpg)
  
  
