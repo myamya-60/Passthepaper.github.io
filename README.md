@@ -1,4 +1,6 @@
- ! [1(.긴자외관]
+![1 긴자 외관](https://user-images.githubusercontent.com/132584735/236255992-79ce179e-d6fe-483f-9aac-c5936b8d14f0.jpg)
+ 
+ 
 # Pass_the_paper
 
 이 장소에 모든 과정을 기록하고 정리 할 예정 입니다.
