@@ -32,14 +32,14 @@ public class Movement : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
 
-        //ÁÂ¿ì ÀÌµ¿
+        //ÃÃ‚Â¿Ã¬ Ã€ÃŒÂµÂ¿
         if (rigid.velocity.x > maxSpeed)
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
         else if (rigid.velocity.x < maxSpeed * (-1))
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
         
 
-        //Á¡ÇÁ
+        //ÃÂ¡Ã‡Ã
         isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
         if (isGround == true && Input.GetKeyDown(KeyCode.Space)) 
         {
