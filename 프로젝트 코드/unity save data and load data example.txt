@@ -1,0 +1,57 @@
+using UnityEngine;
+
+public class SaveDataOnTrigger : MonoBehaviour
+{
+    // 저장할 데이터를 가진 캐릭터 스크립트 또는 컴포넌트를 가져온다
+    public CharacterData characterData;
+
+    // 특정 장소에 도달했는지 여부를 나타내는 변수
+    private bool hasReachedDestination = false;
+
+    // 저장할 데이터를 가진 캐릭터가 특정 장소에 도달하면 호출
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Destination"))
+        {
+            // 도착 여부를 true로 설정
+            hasReachedDestination = true;
+
+            // 데이터를 저장
+            SaveCharacterData();
+        }
+    }
+
+    // 캐릭터 데이터를 저장하는 함수
+    private void SaveCharacterData()
+    {
+        // 저장할 데이터를 설정하고 저장하는 코드를 작성
+        // 이 예시에서는 캐릭터의 위치만 저장하는 것으로 가정
+        SaveManager.Instance.SaveCharacterPosition(characterData, transform.position);
+    }
+}
+
+
+using UnityEngine;
+
+public class LoadDataOnStart : MonoBehaviour
+{
+    // 불러온 데이터를 적용할 캐릭터 스크립트 또는 컴포넌트를 가져온다
+    public CharacterData characterData;
+
+    private void Start()
+    {
+        // 게임 시작 시 저장된 데이터를 불러온다
+        LoadCharacterData();
+    }
+
+    // 캐릭터 데이터를 불러오는 함수입니다.
+    private void LoadCharacterData()
+    {
+        // 저장된 데이터를 가져오는 코드를 작성
+        // 이 예시에서는 캐릭터의 위치를 불러오는 것으로 가정
+        Vector3 savedPosition = SaveManager.Instance.LoadCharacterPosition(characterData);
+
+        // 캐릭터의 위치를 불러온 위치로 설정
+        transform.position = savedPosition;
+    }
+}
